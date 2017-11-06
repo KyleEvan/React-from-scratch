@@ -6,9 +6,9 @@ module.exports = [
     target:'web',
     entry: './src/client/client.js',
     output: {
-      path: path.resolve(__dirname, 'static'),
+      path: path.resolve(__dirname, 'public'),
       filename: 'client.bundle.js',
-      publicPath: '/static/'
+      publicPath: '/public/'
     },
     resolve:{
       extensions: ['.js','.jsx']
@@ -33,10 +33,10 @@ module.exports = [
       target: 'node',
       entry: './src/server/server.js',
       output: {
-        path: path.resolve(__dirname, 'static'),
+        path: path.resolve(__dirname, 'public'),
         filename: 'server.bundle.js',
         libraryTarget: 'commonjs2',
-        publicPath: '/static/'
+        publicPath: '/public/'
       },
       devtool: 'source-map',
       resolve: {

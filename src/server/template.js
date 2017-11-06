@@ -4,8 +4,8 @@ export default ({ markup }) => {
 <head>
 </head>
 <body>
-	<div id="root">${markup}</div>
-	<script src="/static/client.js" async></script>
+	<div id="app">${markup}</div>
+	<script src="/public/client.js" async></script>
 </body>
 </html>`;
 };
